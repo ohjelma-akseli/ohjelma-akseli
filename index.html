@@ -6,75 +6,87 @@
   <title>Riku Jaro – Freelance System Engineer & Sound Technician</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #ffffff;
-      color: #111;
-      line-height: 1.6;
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+    line-height: 1.6;
+  }
+
+  .logo {
+    max-width: 220px;
+    margin-bottom: 48px;
+  }
+
+  .profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+
+  h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 64px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 18px;
+    max-width: 720px;
+  }
+
+  .tagline {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 32px;
+  }
+
+  .cta {
+    margin-top: 32px;
+    font-size: 18px;
+  }
+
+  a {
+    color: #111;
+    text-decoration: underline;
+  }
+
+  footer {
+    margin-top: 80px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* ===== MOBILE LAYOUT ===== */
+  @media (max-width: 700px) {
+    .company-info {
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-.logo {
-  max-width: 220px;
-  margin-bottom: 48px;
-}
-
-.profile {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 24px;
-}
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 80px 24px;
+    .company-logo img {
+      max-width: 200px;
+      margin-top: 24px;
     }
+  }
+</style>
 
-
-    h1 {
-      font-size: 42px;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-size: 22px;
-      font-weight: 700;
-letter-spacing: 0.02em;
-      margin-top: 64px;
-      margin-bottom: 16px;
-    }
-
-    p {
-      font-size: 18px;
-      max-width: 720px;
-    }
-
-    .tagline {
-      font-size: 20px;
-      color: #444;
-      margin-bottom: 32px;
-    }
-
-    .cta {
-      margin-top: 32px;
-      font-size: 18px;
-    }
-
-    a {
-      color: #111;
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 80px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
 </head>
 
 <body>
@@ -129,17 +141,23 @@ letter-spacing: 0.02em;
     </p>
 
 
-<!-- LOGO -->
-    <img src="logo.png" alt="Ohjelma-akseli logo" class="logo">
-<p>
-<h2>Company Information</h2>  
-Ohjelma-akseli Oy<br>
-  Business ID: 2459241-8<br>
-  VAT ID: FI24592418<br>
-  Keijontie 17<br>
-  00610 Helsinki<br>
-  Finland
-</p>
+<h2>Company Information</h2>
+
+<div class="company-info">
+  <div class="company-text">
+    Ohjelma-akseli Oy<br>
+    Business ID: 2459241-8<br>
+    VAT ID: FI24592418<br>
+    Keijontie 17<br>
+    00610 Helsinki<br>
+    Finland
+  </div>
+
+  <div class="company-logo">
+    <img src="logo.png" alt="Ohjelma-akseli logo">
+  </div>
+</div>
+
 
 
     <footer>
