@@ -77,29 +77,29 @@
 
   /* COMPANY INFORMATION LAYOUT */
 
-  .company-info {
-  display: grid;
-  grid-template-columns: 720px 1fr;
-  align-items: center;
-  gap: 40px;
+ .company-info {
+  position: relative;
+  max-width: 900px;
 }
 
+.company-text {
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.6;
+}
 
-
-  .company-text {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-
-  .company-logo {
-  display: flex;
-  justify-content: center;
+.company-logo {
+  position: absolute;
+  left: 780px;   /* 720px text + 60px breathing space */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .company-logo img {
   max-width: 220px;
   height: auto;
 }
+
 
 
   /* MOBILE */
